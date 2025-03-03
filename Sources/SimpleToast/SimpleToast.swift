@@ -183,7 +183,7 @@ public extension View {
     ///   - onDismiss: Closure called when the toast is dismissed
     ///   - content: Inner content for the toast
     /// - Returns: The toast view
-    func simpleToast<SimpleToastContent: View, Item: Identifiable>(
+    func simpleToast<SimpleToastContent: View, Item>(
         item: Binding<Item?>,
         options: SimpleToastOptions,
         onDismiss: (() -> Void)? = nil,
